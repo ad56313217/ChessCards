@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{099553FD-4947-6F2D-A992-B99312E0FB4E}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "ChessCards",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
