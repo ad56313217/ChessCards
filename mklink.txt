@@ -1,0 +1,3 @@
+mklink  /d  "F:\Project\Go\src\MatrixHolidayServer"  "F:\Project\Go\MGo\matrix.com\src\MatrixHolidayServer"
+
+mklink  /d  "F:\Project\Job422T\DOSP_DEMOv2\DOSP_R\Source"  "F:\Project\Job422T\DOSP_DEMOv2\Source"
