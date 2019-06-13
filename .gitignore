@@ -1,3 +1,5 @@
 /Client/Intermediate
 /Client/.vs
 /Client/Saved
+.uproject
+.sln
