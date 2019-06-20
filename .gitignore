@@ -1,5 +1,8 @@
-/Client/Intermediate
+/Client/Binaries
+/Client/DerivedDataCache
 /Client/.vs
 /Client/Saved
+/Client/Intermediate
 .uproject
+.sln
 .sln
