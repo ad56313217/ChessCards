@@ -4,3 +4,5 @@
 /Client/Saved
 /Client/Intermediate
 *.sln
+Client/*.txt
+Client/*.uproject
