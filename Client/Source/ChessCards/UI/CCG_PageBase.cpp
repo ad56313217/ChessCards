@@ -1,6 +1,6 @@
-﻿// Fill out your copyright notice in the Description page of Project Settings.
-
-
+﻿//// Fill out your copyright notice in the Description page of Project Settings.
+//
+//
 #include "CCG_PageBase.h"
 #include "WidgetTree.h"
 #include "Button.h"
@@ -11,8 +11,8 @@
 #include <Slider.h>
 #include <ComboBoxString.h>
 #include <ComboBox.h>
-
-
+//
+//
 UCCG_PageBase::UCCG_PageBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer)
 {
 
@@ -20,8 +20,8 @@ UCCG_PageBase::UCCG_PageBase(const FObjectInitializer& ObjectInitializer) : Supe
 UCCG_PageBase::~UCCG_PageBase()
 {
 }
-
-
+//
+//
 /**初始化*/
 bool UCCG_PageBase::Initialize()
 {

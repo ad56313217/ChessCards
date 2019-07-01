@@ -5,14 +5,18 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "CCG_PageBase.generated.h"
-
-/**
- * 
- */
+//
+///**
+// * 
+// */
 UCLASS()
 class CHESSCARDS_API UCCG_PageBase : public UUserWidget
 {
 	GENERATED_BODY()
+//		public:
+//			/**初始化*/
+//			virtual bool Initialize() override;
+//};
 
 public:
 	UCCG_PageBase(const FObjectInitializer& ObjectInitializer);

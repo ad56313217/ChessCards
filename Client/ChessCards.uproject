@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{099553FD-4947-6F2D-A992-B99312E0FB4E}",
+	"EngineAssociation": "{55852351-482B-DC6A-E5FC-40818D6DBED5}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "ChessCards",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"UMG"
+			]
 		}
 	]
 }
