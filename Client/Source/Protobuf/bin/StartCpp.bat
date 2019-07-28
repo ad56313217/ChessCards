@@ -1,0 +1,1 @@
+protoc -I=F:\Project\Git\ChessCards\Client\Source\Protobuf\bin --cpp_out=F:\Project\Git\ChessCards\Client\Source\Protobuf\bin  addressbook.proto
