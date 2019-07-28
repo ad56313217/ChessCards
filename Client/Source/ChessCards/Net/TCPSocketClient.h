@@ -29,6 +29,8 @@ class CHESSCARDS_API ATCPSocketClient : public AActor
 			UFUNCTION(BlueprintPure, Category = "MySocket")
 				void SocketReceive(bool& bReceive, FString& recvMessage);
 		
+			virtual void MesReceive(bool bReceive, FString recvMessage);
+
 			FString StringFromBinaryArray(TArray<uint8> BinaryArray);
 		
 			FSocket *SocketClient;

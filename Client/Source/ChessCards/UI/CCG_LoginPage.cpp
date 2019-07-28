@@ -28,8 +28,13 @@ void UCCG_LoginPage::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 
 void UCCG_LoginPage::AddEventListening()
 {
-	//if (StartButton)
-	//{
-	//	StartButton->OnClicked.AddDynamic(this, &UCCG_MainPage::Start_Btf);
-	//}
+	if (LogonButton)
+	{
+		LogonButton->OnClicked.AddDynamic(this, &UCCG_LoginPage::Logon_Btf);
+	}
+}
+
+void UCCG_LoginPage::Logon_Btf()
+{
+
 }

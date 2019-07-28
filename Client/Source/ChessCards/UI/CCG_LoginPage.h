@@ -25,4 +25,9 @@ protected:
 	//¼àÌýÊÂ¼þ
 	UFUNCTION()
 		void AddEventListening();
+	UFUNCTION()
+		void Logon_Btf();
+public:
+	UPROPERTY(Meta = (BindWidget))
+		class UButton* LogonButton;
 };

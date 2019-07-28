@@ -98,9 +98,16 @@ void ATCPSocketClient::SocketReceive(bool & bReceive, FString & recvMessage)
 	recvMessage = ReceivedUE4String;
 
 	bReceive = true;
+
+	MesReceive(true, ReceivedUE4String);
 }
 
 FString ATCPSocketClient::StringFromBinaryArray(TArray<uint8> BinaryArray)
 {
 	return FString(ANSI_TO_TCHAR(reinterpret_cast<const char*>(BinaryArray.GetData())));
+}
+
+void ATCPSocketClient::MesReceive(bool bReceive, FString recvMessage)
+{
+
 }

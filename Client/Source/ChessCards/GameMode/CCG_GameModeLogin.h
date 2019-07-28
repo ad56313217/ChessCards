@@ -3,20 +3,24 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "CCG_GameModeBase.generated.h"
+#include "CCG_GameModeNet.h"
+#include "UI/CCG_MainPage.h"
+#include "CCG_GameModeLogin.generated.h"
 
 /**
- *
- */
+*
+*/
 UCLASS()
-class CHESSCARDS_API ACCG_GameModeBase : public AGameModeBase
+class CHESSCARDS_API ACCG_GameModeLogin : public ACCG_GameModeNet
 {
 	GENERATED_BODY()
 
 public:
-	ACCG_GameModeBase();
+	ACCG_GameModeLogin();
+
 	virtual void Tick(float DeltaTime) override;
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	void CreateMainPage();
 };
