@@ -24,9 +24,9 @@ void ACCG_GameModeLogin::BeginPlay()
 
 void ACCG_GameModeLogin::CreateMainPage()
 {
-	FString pageName = "WidgetBlueprint'/Game/UI/Main/MainPage.MainPage_C'";
+	FString pageName = "WidgetBlueprint'/Game/UI/Main/LoginPage.LoginPage_C'";
 	TSubclassOf<UUserWidget> widgetClass = LoadClass<UUserWidget>(NULL, *pageName);
-	UCCG_MainPage* mainpage = CreateWidget<UCCG_MainPage>(GetWorld(), widgetClass);
+	UCCG_LoginPage* mainpage = CreateWidget<UCCG_LoginPage>(GetWorld(), widgetClass);
 	if (mainpage)
 	{
 		mainpage->AddToViewport(0);

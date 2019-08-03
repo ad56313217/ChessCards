@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "UI/CCG_PageBase.h"
+#include "Controller/CCG_ControllerLogin.h"
 #include "CCG_LoginPage.generated.h"
 
 /**
@@ -30,4 +31,11 @@ protected:
 public:
 	UPROPERTY(Meta = (BindWidget))
 		class UButton* LogonButton;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Login")
+	FString NameStr;
+	UPROPERTY(BlueprintReadWrite, Category = "Login")
+	FString PWStr;
+private:
+	ACCG_ControllerLogin* GetControllerLogin();
 };

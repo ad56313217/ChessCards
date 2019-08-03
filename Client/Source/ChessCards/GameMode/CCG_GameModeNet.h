@@ -23,6 +23,11 @@ public:
 
 	ACCG_TCPManager* CreateTCPManager();
 
+	void TCP_SendMes(FString DataIn);
 public:
 	ACCG_TCPManager * TcpM;
+
+	FString Url;
+
+	int32 Port;
 };

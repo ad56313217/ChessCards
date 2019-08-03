@@ -84,3 +84,7 @@ void UCCG_PageBase::NativeTick(const FGeometry& MyGeometry, float InDeltaTime)
 	Super::NativeTick(MyGeometry, InDeltaTime);
 }
 
+//ACCG_GameModeNet* UCCG_PageBase::GetGameModeNet()
+//{
+//	//GetWorld()->GetFirstPlayerController();
+//}

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "CCG_GameModeNet.h"
 #include "UI/CCG_MainPage.h"
+#include "UI/CCG_LoginPage.h"
 #include "CCG_GameModeLogin.generated.h"
 
 /**

@@ -36,5 +36,20 @@ void UCCG_LoginPage::AddEventListening()
 
 void UCCG_LoginPage::Logon_Btf()
 {
+	ACCG_ControllerLogin* _c = GetControllerLogin();
+	if (_c)
+	{
+		FString _d = "login,";
+		_d += NameStr;
+		_d += ",";
+		_d += PWStr;
+		_c->Login(_d);
+	}
 
+}
+
+ACCG_ControllerLogin* UCCG_LoginPage::GetControllerLogin()
+{
+	ACCG_ControllerLogin* _c = Cast<ACCG_ControllerLogin>(GetWorld()->GetFirstPlayerController());
+	return _c;
 }
