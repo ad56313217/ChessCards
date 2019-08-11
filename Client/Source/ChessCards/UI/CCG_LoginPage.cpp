@@ -39,7 +39,7 @@ void UCCG_LoginPage::Logon_Btf()
 	ACCG_ControllerLogin* _c = GetControllerLogin();
 	if (_c)
 	{
-		FString _d = "login,";
+		FString _d = "login,register,";
 		_d += NameStr;
 		_d += ",";
 		_d += PWStr;

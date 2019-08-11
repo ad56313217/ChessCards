@@ -6,6 +6,7 @@
 
 ACCG_GameModeNet::ACCG_GameModeNet()
 {
+	//Url = "101.132.149.251";
 	Url = "101.132.149.251";
 	Port = 8888;
 }
@@ -26,6 +27,8 @@ void ACCG_GameModeNet::BeginPlay()
 	if (TcpM)
 	{
 		TcpM->SocketCreate(Url, Port);
+
+		GetWorldTimerManager().SetTimer(Timer, this, &ACCG_GameModeNet::ReceiveMes, 1.f, true, 1.f);
 	}
 	
 }
@@ -40,5 +43,15 @@ void ACCG_GameModeNet::TCP_SendMes(FString DataIn)
 	if (TcpM)
 	{
 		TcpM->SocketSend(DataIn);
+	}
+}
+
+void ACCG_GameModeNet::ReceiveMes()
+{
+	if (TcpM)
+	{
+		bool isReceive;
+		FString mesInfo;
+		TcpM->SocketReceive(isReceive, mesInfo);
 	}
 }

@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "CCG_GameModeBase.h"
 #include "Net/CCG_TCPManager.h"
+#include "TimerManager.h"
 #include "CCG_GameModeNet.generated.h"
 
 /**
@@ -24,10 +25,14 @@ public:
 	ACCG_TCPManager* CreateTCPManager();
 
 	void TCP_SendMes(FString DataIn);
+
+	void ReceiveMes();
 public:
 	ACCG_TCPManager * TcpM;
 
 	FString Url;
 
 	int32 Port;
+private:
+	FTimerHandle Timer;
 };
