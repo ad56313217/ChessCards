@@ -28,9 +28,13 @@ protected:
 		void AddEventListening();
 	UFUNCTION()
 		void Logon_Btf();
+	UFUNCTION()
+		void Register_Btf();
 public:
 	UPROPERTY(Meta = (BindWidget))
 		class UButton* LogonButton;
+	UPROPERTY(Meta = (BindWidget))
+		class UButton* RegisterButton;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Login")
 	FString NameStr;

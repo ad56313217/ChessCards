@@ -32,9 +32,27 @@ void UCCG_LoginPage::AddEventListening()
 	{
 		LogonButton->OnClicked.AddDynamic(this, &UCCG_LoginPage::Logon_Btf);
 	}
+	if (RegisterButton)
+	{
+		RegisterButton->OnClicked.AddDynamic(this, &UCCG_LoginPage::Register_Btf);
+	}
 }
 
 void UCCG_LoginPage::Logon_Btf()
+{
+	ACCG_ControllerLogin* _c = GetControllerLogin();
+	if (_c)
+	{
+		FString _d = "login,login,";
+		_d += NameStr;
+		_d += ",";
+		_d += PWStr;
+		_c->Login(_d);
+	}
+
+}
+
+void UCCG_LoginPage::Register_Btf()
 {
 	ACCG_ControllerLogin* _c = GetControllerLogin();
 	if (_c)
